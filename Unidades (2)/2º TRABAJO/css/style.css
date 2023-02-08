@@ -1,0 +1,33 @@
+body{
+    margin: 25px;
+    border: 5px;
+    background-color: #E6CCDC;
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+}
+
+h1{
+    text-align: center; background-color: #ffffff;font-size:35px
+}
+
+button:hover{background-color: pink;color: black; box-shadow: 10px 10px 15px white; font-size: 20px;border-radius: 1opx;}
+
+p{font-family: Courier;font-size: 20px; }
+
+
+.a{margin-top: 50px; font-size:13px }
+
+.alerta{
+    background-color: #DBC4F1;
+}
+
+.segundapagina{margin-left: 200px;}
+
+.botondeingresar{
+  background: pink;
+  border-radius: 5px;
+
+}
+.melodykitty{
+  float: left;
+}

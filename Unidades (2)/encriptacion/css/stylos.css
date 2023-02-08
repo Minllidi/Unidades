@@ -1,0 +1,13 @@
+.alerta {
+    background-color: rgb(245, 143, 143);
+}
+
+.alert {
+    background-color: rgb(133, 233, 133);
+}
+body {
+    background-image: url("../img/peppa.jpg");
+}
+h1 {
+    font-family: 'Kalam', cursive;
+}

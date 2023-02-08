@@ -1,0 +1,14 @@
+h1 {
+font-family: 'Yeon Sung', cursive;
+color: brown;
+line-height: 50px;
+font-size: 50px;
+}
+
+p {
+    font-family: 'Anybody', cursive;
+    text-align: 20px;
+} 
+body {
+    background-color: bisque;
+}
