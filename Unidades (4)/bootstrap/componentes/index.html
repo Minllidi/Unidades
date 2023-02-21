@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylos.css">
+</head>
+<body>
+    <h1>COMPONENTES DEL BOOTSTRAP</h1>
+    <main class="container">
+        <h3>Tab o Pestañas</h3>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Inicio</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Historia</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contactos</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit molestias placeat dignissimos aliquam, exercitationem laudantium sequi facere minima, repellendus quam vero ea explicabo voluptas ex blanditiis. Cumque deleniti dicta quos?</div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora blanditiis qui quod, placeat incidunt nesciunt voluptatem, quasi minus nisi nemo facilis commodi laudantium molestias? Sed tenetur enim itaque deserunt accusamus?</div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis veniam id maiores iste, ipsa aspernatur dicta odio illum distinctio corporis veritatis maxime. Maiores aperiam amet sed nihil fugit ipsum sapiente..</div>
+      </div>
+      <hr>
+      <h3>Popovers</h3>
+      <div class="text-center">
+        <button type="button" 
+        class="btn btn-lg btn-danger" 
+        data-bs-toggle="popover"
+        data-bs-placement="top" 
+        data-bs-content="Top popover" 
+        data-bs-title="Titulo" 
+        data-bs-content="Es un mensaje de maquetacion para paginas web">
+        Click to toggle popover
+      </button>
+      <button type="button" 
+        class="btn btn-info" 
+        data-bs-toggle="popover" 
+        data-bs-placement="bottom"
+        data-bs-content="Bottom popover"
+        data-bs-title="JavaScrip" 
+        data-bs-content="Este es un lenguaje de programacion para dar funciones">
+        JavaScrip
+      </button>
+      <button type="button" 
+        class="btn btn-style btn-warning" 
+        data-bs-toggle="popover" 
+        data-bs-placement="left" 
+        data-bs-content="Left popover"
+        data-bs-title="Css" 
+        data-bs-content="Este es un boton para hacer diseños">
+        CSS
+      </button>
+      </div>
+      <h3>Borders</h3>
+      <div class="d-flex justify-content-evenly">
+      <div class="border p-5"></div>
+      <div class="border p-5 border-primary"></div>
+      <div class="border p-5 border-danger"></div>
+      <div class="border p-5 border-info"></div>
+      <div class="border p-5 border-warning"></div>
+      <div class="border p-5 border-success"></div>
+      <div class="border p-5 border-light"></div>
+    </div>
+
+    <hr>
+    <h3>Sombras</h3>
+    <div class="d-flex justify-content-evenly">
+      <div class="border p-5"></div>
+      <div class="shadow-none p-5 mb-5 bg-body-tertiary rounded"></div>
+      <div class="shadow-sm p-5 mb-5 bg-body-tertiary rounded"></div>
+      <div class="shadow p-5 mb-5 bg-body-tertiary rounded"></div>
+      <div class="shadow-lg p-5 mb-5 bg-body-tertiary rounded"></div>
+      <div class="border p-5 border-success"></div>
+    </div>
+    <hr>
+    <h3>Sistemas de Grillas</h3>
+    <div class="row">
+      <div class="col-6">
+        Hola
+      </div>
+      <div class="col-6">
+        mundo.
+      </div>
+    </div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="assets/app.js"></script>
+</body>
+</html>
