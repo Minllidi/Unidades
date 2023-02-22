@@ -8,87 +8,142 @@
     <title>Recetas de Cocina</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styless.css">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-danger">
+        <div class="container-fluid">
+            <img src="https://cdn.pixabay.com/photo/2016/07/17/18/35/peru-1524454_640.png" alt="loguito" width="50"
+                height="50" margin-left="10px">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Gastronomia Peruana</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Chefs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Gastón Acurio</a></li>
+                            <li><a class="dropdown-item" href="#">Virgilio Martínez</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Otros más</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Salir</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </form>
+            </div>
+        </div>
+    </nav>
     <div class="text-center">
         <h1>Blog de recetas de Comida Peruanas</h1>
         <h6>Recetas típicas y populares de la gastronomia peruana.</h6>
         <div class="d-flex justify-content-between">
-            <div id="carouselExample" class="carousel slide" >
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://comidasperuanas.net/wp-content/uploads/2015/08/Ceviche-Peruano-de-Pescado.jpg"
-                            class="d-block w-100" alt="ceviche">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://www.elolivar.com.pe/wp-content/uploads/2021/08/lomo-saltado.png"
-                            class="d-block w-100" alt="lomito">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://www.comedera.com/wp-content/uploads/2013/10/aji-de-gallina.jpg"
-                            class="d-block w-100" alt="pipipi">
-                    </div>
+                  <div class="carousel-item active" data-bs-interval="2600">
+                    <img src="https://comidasperuanas.net/wp-content/uploads/2015/08/Ceviche-Peruano-de-Pescado.jpg" class="d-block w-100" alt="ceviche">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2600">
+                    <img src="https://www.elolivar.com.pe/wp-content/uploads/2021/08/lomo-saltado.png" class="d-block w-100" alt="lomito">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2600">
+                    <img src="https://www.comedera.com/wp-content/uploads/2013/10/aji-de-gallina.jpg" class="d-block w-100" alt="aji">
+                  </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
                 </button>
+              </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <div class="d-flex justify-content-evenly">
+            <div class="card" style="width: 18rem;">
+                <img src="https://cdn0.recetasgratis.net/es/posts/8/6/2/causa_limena_31268_orig.jpg"
+                    class="card-img-top" alt="causa">
+                <div class="card-body">
+                    <h5 class="card-title">Causa Rellena</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="https://www.recetasgratis.net/receta-de-causa-limena-31268.html" class="btn btn-danger">Ver
+                        Receta</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://comidasperuanas.net/wp-content/uploads/2015/08/Ceviche-Peruano-de-Pescado.jpg"
+                    class="card-img-top" alt="ceviche">
+                <div class="card-body">
+                    <h5 class="card-title">Ceviche de Pescado</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="https://www.recetasgratis.net/receta-de-ceviche-peruano-18147.html"
+                        class="btn btn-danger">Ver Receta</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://www.elolivar.com.pe/wp-content/uploads/2021/08/lomo-saltado.png" class="card-img-top"
+                    alt="lomito">
+                <div class="card-body">
+                    <h5 class="card-title">Lomo Saltado</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="https://www.recetasgratis.net/receta-de-lomo-saltado-peruano-11475.html"
+                        class="btn btn-danger">Ver Receta</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://www.comedera.com/wp-content/uploads/2013/10/aji-de-gallina.jpg" class="card-img-top"
+                    alt="aji">
+                <div class="card-body">
+                    <h5 class="card-title">Ají de Gallina</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="https://www.recetasgratis.net/receta-de-aji-de-pollo-16783.html" class="btn btn-danger">Ver
+                        Receta</a>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="d-flex justify-content-evenly">
-        <div class="card" style="width: 18rem;">
-            <img src="https://cdn0.recetasgratis.net/es/posts/8/6/2/causa_limena_31268_orig.jpg" class="card-img-top"
-                alt="causa">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="https://comidasperuanas.net/wp-content/uploads/2015/08/Ceviche-Peruano-de-Pescado.jpg"
-                class="card-img-top" alt="ceviche">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="https://www.elolivar.com.pe/wp-content/uploads/2021/08/lomo-saltado.png" class="card-img-top"
-                alt="lomito">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="https://www.comedera.com/wp-content/uploads/2013/10/aji-de-gallina.jpg" class="card-img-top"
-                alt="aji">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-    </div>
+    <footer>
+        <p class="p-4">&copy; DERECHOS DE AUTOR RESERVADOS | 2023</p>
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <script src="manual.js"></script>
 </body>
 
 </html>
