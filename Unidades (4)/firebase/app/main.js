@@ -39,6 +39,36 @@ $("#btn-registrar").click(function () {
             var errorCode = error.code;
             var errorMessage = error.message;
             // ..
-        });
+            alert("error al crear cuenta");
+        })    
 });
 
+//Ingresar con nuestro correo registrado
+$("#inicio").click(function () {
+    //Captura el valor de email y password
+    // Capturar el email y el password
+    let email = $("#email").val();
+    let password = $("#password").val();
+
+    firebase.auth().signInWithEmailAndPassword(email, password)
+        .then((userCredential) => {
+            // Signed in
+            // alert("se pudo pa")
+            window.location.href = 'home.html';
+            // ...
+        })
+        .catch((error) => {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            console.log(errorCode,errorMessage);
+        });
+})
+
+//cerrar sesion
+$("#salir").click(function () {
+    firebase.auth().signOut().then(() => {
+        // Sign-out successful.
+        window.location.href = 'index.html';
+        
+      });
+})
