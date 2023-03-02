@@ -1,6 +1,3 @@
-
-
-
 $(document).ready(function () {
     const firebaseConfig = {
         apiKey: "AIzaSyDDaikwzv9DT-ed61YjIlS-u1BXypwf9Nc",
