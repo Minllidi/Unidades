@@ -31,15 +31,15 @@ $("#registrarse").click(function () {
             var user = userCredential.user;
             // console.log("creaste una cuenta");
             Swal.fire({
-            position: 'top-end',
-            icon: 'success',
-            title: 'Tu cuenta ha sido registrada.',
-            showConfirmButton: false,
-            timer: 1500
-          })
+                position: 'top-end',
+                icon: 'success',
+                title: 'Tu cuenta ha sido registrada.',
+                showConfirmButton: false,
+                timer: 1500
+            })
             // ...
         })
-        
+
         .catch((error) => {
             var errorCode = error.code;
             var errorMessage = error.message;
@@ -48,8 +48,10 @@ $("#registrarse").click(function () {
                 icon: 'error',
                 title: 'Oops...',
                 text: 'Parece que algo salio mal a crear tu cuenta.',
-                footer: '<a href="">Intentar de nuevo</a>' }) });
-        
+                footer: '<a href="">Intentar de nuevo</a>'
+            })
+        });
+
 });
 
 //Ingresar con nuestro correo registrado
@@ -63,12 +65,12 @@ $("#btn-iniciar").click(function () {
         .then((userCredential) => {
             // Signed in
             window.location.href = 'pad-principal.html';
-            
+
         })
         .catch((error) => {
             var errorCode = error.code;
             var errorMessage = error.message;
-            console.log(errorCode,errorMessage);
+            console.log(errorCode, errorMessage);
         });
 })
 
@@ -78,8 +80,23 @@ $("#salir").click(function () {
     firebase.auth().signOut().then(() => {
         // Sign-out successful.
         window.location.href = 'index.html';
-        
-      });
-      
+
+    });
+
 })
 
+//iniciar sesion con google
+
+var provider = new firebase.auth.GoogleAuthProvider();
+
+$("#btn-google").click(function () {
+    firebase.auth()
+        .signInWithPopup(provider)
+        .then((result) => {
+            console.log("ingresaste");
+        }).catch((error) => {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            console.log(errorCode, errorMessage);
+        });
+}) 
