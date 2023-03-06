@@ -4,13 +4,14 @@
 
 
   // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
 
   import { 
     getFirestore,
-    collection, 
-    addDocs
+    collection,
+    addDoc,
+    getDocs
 } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js"
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
@@ -32,12 +33,14 @@
   const analytics = getAnalytics(app);
 
   //Iniciar getFirestore
-  const db = getFirestore();
+  const db = getFirestore(app);
 
-  export const guardarTarea = (titulo, descrip) => {
-    addDocs(collection(db, "tareas"),{
-        _title: titulo,
-        _descripcion: descrip
+  export const agregarTarea = (titulo, descripcion) => {
+    addDoc(collection(db, "tareas"), {
+        _titulo: titulo,
+        _descripcion: descripcion
     });
-    console.log()
-  }
+    console.log("se agrego la tarea exisitosamente");
+  };
+
+export const listarTareas = () => getDocs(collection(db,"tareas"));
