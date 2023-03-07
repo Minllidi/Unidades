@@ -11,7 +11,8 @@
     getFirestore,
     collection,
     addDoc,
-    getDocs
+    getDocs,
+    onSnapshot
 } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js"
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
@@ -44,3 +45,5 @@
   };
 
 export const listarTareas = () => getDocs(collection(db,"tareas"));
+
+export const OnListarTareas = (callback) => onSnapshot(collection(db,"tareas"),callback);
